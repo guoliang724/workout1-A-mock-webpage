@@ -1,0 +1,91 @@
+@import "//at.alicdn.com/t/font_1982726_dwf1r43dh74.css";
+
+button {
+  cursor: pointer;
+}
+
+/**/
+
+/* common start   */
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+/* common end*/
+.header {
+  padding-top: 30px;
+}
+
+.header .container {
+  width: 1080px;
+  height: 34px;
+  margin: 0 auto 25px;
+}
+
+.header .container .logo {
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  background: url("../images/logo_db.png") no-repeat;
+  width: 154px;
+  height: 30px;
+  margin-right: 30px;
+}
+.header .search {
+  position: relative;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+  margin-right: 20px;
+}
+.header .search .searchbox {
+  width: 242px;
+  font-size: 13px;
+  height: 20px;
+  padding: 5px;
+}
+
+.header .search .btn {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.header .nav a {
+  display: inline-block;
+  width: 40px;
+  margin-top: 6px;
+  height: 20px;
+  background: url("../images/anony_nav_logo.png");
+  margin-left: 18px;
+}
+
+.header .nav .nav-read {
+  background-position: 0 0;
+}
+
+.header .nav .nav-movie {
+  background-position: -60px 0;
+}
+.header .nav .nav-music {
+  background-position: -120px;
+}
+.header .nav .nav-samecity {
+  background-position: -180px 0;
+}
+.header .nav a.nav-group {
+  background-position: -240px 0;
+}
+.header .nav a.nav-yuedu {
+  background-position: -300px 0;
+}
+.header .nav .nav-fm {
+  background-position: -360px 0;
+}
+.header .nav .nav-time {
+  background-position: -420px 0;
+  width: 43px;
+}
