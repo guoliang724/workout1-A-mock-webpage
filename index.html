@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>豆瓣</title>
-    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
@@ -37,5 +36,98 @@
         </nav>
       </div>
     </header>
+    <div class="main">
+      <p class="logo">豆瓣<span class="version">6.0</span></p>
+      <div class="download">
+        <button class="download">下载豆瓣 App</button>
+        <div class="qlcode"><i class="iconfont icon-erweima"></i></div>
+      </div>
+      <div class="form">
+        <div class="choose-area hidden">
+          <div class="center">
+            <div class="title">选择国际区号</div>
+            <div class="list">
+              <ul>
+                <li class="selected">
+                  <span class="country">中国</span>
+                  <i class="iconfont icon-duigou"></i>
+                  <span class="code right">+86</span>
+                </li>
+                <li>
+                  <span class="country">加拿大</span
+                  ><span class="code right">+84</span>
+                </li>
+                <li>
+                  <span class="country">美国</span
+                  ><span class="code right">+83</span>
+                </li>
+                <li>
+                  <span class="country">意大利</span
+                  ><span class="code right">+82</span>
+                </li>
+                <li>
+                  <span class="country">俄罗斯</span
+                  ><span class="code right">+81</span>
+                </li>
+                <li>
+                  <span class="country">法国</span
+                  ><span class="code right">+86</span>
+                </li>
+                <li>
+                  <span class="country">瑞士</span
+                  ><span class="code right">+86</span>
+                </li>
+                <li>
+                  <span class="country">印度</span
+                  ><span class="code right">+86</span>
+                </li>
+                <li>
+                  <span class="country">韩国</span
+                  ><span class="code right">+86</span>
+                </li>
+                <li>
+                  <span class="country">印度尼西亚</span
+                  ><span class="code right">+86</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <label for="" class="login clearfix">
+          <li class="left selected">短信登录/注册</li>
+          <li class="left">密码登录</li>
+        </label>
+        <form>
+          <div class="protocol">
+            请仔细阅读
+            <a class="private">豆瓣使用协议、隐私政策</a>
+          </div>
+
+          <div class="tele">
+            <input type="text" class="zone" value="+86" />
+            <input type="text" class="number" placeholder="手机号" />
+          </div>
+
+          <div class="validate">
+            <input type="text" class="text" placeholder="验证码" />
+            <button class="rqcode">获取短信验证码</button>
+          </div>
+          <div class="loging"><button class="sub">登录豆瓣</button></div>
+          <div class="check">
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox" class="auto">下次自动登录</label>
+            <span class="error right">收不到验证码</span>
+          </div>
+
+          <div class="thirdpart">
+            <span class="login">第三方登录:</span>
+            <a href="" class="weixin"><i class="iconfont icon-weixin"></i></a>
+            <a href="" class="weibo"><i class="iconfont icon-weibo"></i></a>
+          </div>
+        </form>
+        <div class="barcode"></div>
+      </div>
+      <div class="barcode"></div>
+    </div>
   </body>
 </html>

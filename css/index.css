@@ -1,4 +1,5 @@
-@import "//at.alicdn.com/t/font_1982726_dwf1r43dh74.css";
+@import "reset.css";
+@import "//at.alicdn.com/t/font_1982726_dyfpn5fa3dj.css";
 
 button {
   cursor: pointer;
@@ -13,9 +14,21 @@ button {
 .right {
   float: right;
 }
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.hidden {
+  display: none;
+}
 /* common end*/
 .header {
   padding-top: 30px;
+}
+.body {
+  font-family: Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei",
+    "WenQuanYi Micro Hei", sans-serif;
 }
 
 .header .container {
@@ -88,4 +101,214 @@ button {
 .header .nav .nav-time {
   background-position: -420px 0;
   width: 43px;
+}
+.main {
+  height: 304px;
+  margin-bottom: 25px;
+  background: url("../images/background.jpg") no-repeat top left/750px 100%;
+  background-color: #eef4ee;
+  position: relative;
+}
+.main .logo {
+  width: 150px;
+  height: 24px;
+  margin: 7px 0;
+  font-size: 25px;
+  color: #111;
+  line-height: 24px;
+  position: absolute;
+  left: 690px;
+  top: 90px;
+}
+.main .logo .version {
+  font-size: 25px;
+  margin-left: 10px;
+  font-weight: 100;
+}
+
+.main div.download {
+  position: absolute;
+  top: 150px;
+  left: 690px;
+}
+
+.main button.download {
+  width: 115x;
+  height: 30px;
+  background-color: #00b51d;
+  color: #ffffff;
+  font-size: 12px;
+  vertical-align: top;
+  margin: 2px;
+  border-radius: 2px;
+  vertical-align: top;
+}
+.main .download div.qlcode {
+  margin: 3px;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  padding: 2px;
+  box-sizing: border-box;
+}
+.main .download div.qlcode i {
+  line-height: 20px;
+  font-size: 30px;
+}
+
+.main .form {
+  height: 256px;
+  width: 280px;
+  padding: 30px 10px 10px;
+  overflow: hidden;
+  position: absolute;
+  right: 255px;
+  color: #9b9b9b;
+  line-height: 2;
+}
+
+.form label.login {
+  text-align: center;
+}
+.form .login li {
+  display: inline-block;
+  width: 140px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.form .login li.selected {
+  font-weight: bolder;
+  color: #333;
+  border-bottom: 1px solid #494949;
+}
+.form form div.protocol {
+  width: 280px;
+  font-size: 12px;
+  margin: 10px 0;
+}
+.form div a.private {
+  color: #41c522;
+  font-size: 12px;
+  cursor: pointer;
+}
+.form .tele {
+  border: 1px solid #e4e6e5;
+  padding: 4px 0;
+  margin-bottom: 10px;
+}
+.form .tele .zone,
+.number {
+  display: inline-block;
+  text-indent: 4px;
+  height: 30px;
+}
+.form .tele .zone {
+  width: 32px;
+  border-right: 1px solid #e4e6e5;
+  font-size: 15px;
+}
+.form .tele .number {
+  width: 200px;
+}
+
+.form .validate {
+  border: 1px solid #e4e6e5;
+  width: 280px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+.form .validate .text {
+  height: 30px;
+  text-indent: 5px;
+}
+
+.form .validate .rqcode {
+  color: #41ac52;
+}
+
+.form .loging .sub {
+  width: 280px;
+  height: 33px;
+  background: #41ac52;
+  font-weight: 400;
+  border-radius: 6px;
+}
+.form .check {
+  border-bottom: 1px solid #e4e6e5;
+}
+
+.form .check .auto {
+  color: #333;
+  font-size: 13px;
+}
+
+.form .check .error {
+  color: #41ac52;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.form .thirdpart .login {
+  font-size: 11px;
+  color: #9b9b9b;
+}
+
+.form .thirdpart a {
+  margin-left: 10px;
+}
+
+.form .thirdpart .weixin {
+  color: #00b51d;
+}
+.form .thirdpart .weibo {
+  color: red;
+}
+
+.form .choose-area {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.form .choose-area .center {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.form .choose-area .center .title {
+  font-size: 1.17em;
+  background: #ebf5eb;
+  padding: 10px 10px 6px;
+  color: #060;
+  font-weight: bold;
+}
+
+.form .choose-area .center .list {
+  height: 170px;
+  box-sizing: border-box;
+  overflow: auto;
+  background: #ffffff;
+}
+.form .choose-area .center .list li {
+  margin-left: 5px;
+  line-height: 2.6;
+  color: #494949;
+  border-top: 1px solid #e5e5e5;
+  cursor: pointer;
+}
+.form .choose-area .center .list li.selected {
+  color: #00b51d;
 }

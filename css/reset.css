@@ -134,3 +134,9 @@ button {
   outline-offset: 0;
   background-color: transparent;
 }
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
