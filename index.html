@@ -97,7 +97,8 @@
           <li class="left selected">短信登录/注册</li>
           <li class="left">密码登录</li>
         </label>
-        <form>
+        <!--register form-->
+        <form class="">
           <div class="protocol">
             请仔细阅读
             <a class="private">豆瓣使用协议、隐私政策</a>
@@ -118,16 +119,78 @@
             <label for="checkbox" class="auto">下次自动登录</label>
             <span class="error right">收不到验证码</span>
           </div>
-
-          <div class="thirdpart">
-            <span class="login">第三方登录:</span>
-            <a href="" class="weixin"><i class="iconfont icon-weixin"></i></a>
-            <a href="" class="weibo"><i class="iconfont icon-weibo"></i></a>
+        </form>
+        <!--password login form-->
+        <form class="password clearfix hidden">
+          <a class="right">找回密码</a>
+          <input type="text" placeholder="手机号/邮箱" />
+          <input type="text" placeholder="密码" />
+          <div class="loging">
+            <button class="sub" disabled>登录豆瓣</button>
           </div>
         </form>
-        <div class="barcode"></div>
+        <div class="thirdpart">
+          <span class="login">第三方登录:</span>
+          <a href="" class="weixin"><i class="iconfont icon-weixin"></i></a>
+          <a href="" class="weibo"><i class="iconfont icon-weibo"></i></a>
+        </div>
       </div>
       <div class="barcode"></div>
+    </div>
+    <div class="hot">
+      <div class="leftside left clearfix">
+        <div class="popular">
+          热点内容 ....(<a href="" class="more">更多</a>)
+        </div>
+        <div class="pics">
+          <div class="pic">
+            <p class="img i1"></p>
+            <p class="text">嘉德满都的微笑<span class="txt">42张照片</span></p>
+          </div>
+
+          <div class="pic">
+            <p class="img i2"></p>
+            <p class="text">姥爷的诗<span class="txt">19张照片</span></p>
+          </div>
+
+          <div class="pic">
+            <p class="img i3"></p>
+            <p class="text">也许每天更新<span class="txt">147张照片</span></p>
+          </div>
+
+          <div class="pic">
+            <p class="img i4"></p>
+            <p class="text">板绘<span class="txt">20张照片</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="middle">
+        <ul>
+          <li>
+            <a href="">我流血了（上）</a>
+            <div class="title">柴卡丝的日记</div>
+            <div class="content">
+              我是一个出生没几年的女性——当然了，我没有做变性手术。为什么这么说呢？这篇足...
+            </div>
+          </li>
+          <li><a href="">大格洛克纳山（大钟山）区奇妙之旅</a></li>
+          <li><a href="">合江：关于逝去的与留下的</a></li>
+          <li><a href="">别样的旅行（三）</a></li>
+          <li><a href="">我不想做那个只是会鼓掌的人</a></li>
+          <li>
+            <a href="">平潭岛的蓝眼泪并没有那么好看，只有海风让我流连忘返...</a>
+          </li>
+          <li>
+            <a href=""
+              >在“有情”传统中建立及重建自我——关于张新颖的沈从文传兼论其写法</a
+            >
+          </li>
+          <li><a href="">一年支教回顾总结（2019.8-2020.7）</a></li>
+          <li><a href="">记春蚕｜食桑-吐丝-作茧-化蛾</a></li>
+          <li><a href="">见不得人的爱好</a></li>
+        </ul>
+      </div>
+      <div class="rightside right"></div>
     </div>
   </body>
 </html>
