@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
+    <!--header part-->>
     <header class="header">
       <div class="container">
         <div class="left">
@@ -36,11 +37,21 @@
         </nav>
       </div>
     </header>
+    <!--banner part-->>
     <div class="main">
       <p class="logo">豆瓣<span class="version">6.0</span></p>
       <div class="download">
         <button class="download">下载豆瓣 App</button>
-        <div class="qlcode"><i class="iconfont icon-erweima"></i></div>
+        <div class="qlcode">
+          <i class="iconfont icon-erweima"></i>
+          <div class="qlcode-image hidden">
+            <img
+              src="/workout1-Douban-mainpage/images/qrcode-image.png"
+              alt=""
+            />
+            <span class="text">iOS / Android 扫码直接下载</span>
+          </div>
+        </div>
       </div>
       <div class="form">
         <div class="choose-area hidden">
@@ -94,11 +105,11 @@
           </div>
         </div>
         <label for="" class="login clearfix">
-          <li class="left selected">短信登录/注册</li>
-          <li class="left">密码登录</li>
+          <li class="left selected txt">短信登录/注册</li>
+          <li class="left pasd">密码登录</li>
         </label>
         <!--register form-->
-        <form class="">
+        <form class="txt clearfix">
           <div class="protocol">
             请仔细阅读
             <a class="private">豆瓣使用协议、隐私政策</a>
@@ -123,10 +134,15 @@
         <!--password login form-->
         <form class="password clearfix hidden">
           <a class="right">找回密码</a>
-          <input type="text" placeholder="手机号/邮箱" />
-          <input type="text" placeholder="密码" />
+          <input type="text" class="input" placeholder="手机号/邮箱" />
+          <input type="text" class="input" placeholder="密码" />
           <div class="loging">
             <button class="sub" disabled>登录豆瓣</button>
+          </div>
+          <div class="check">
+            <input type="checkbox" class="checkbox" />
+            <label for="checkbox" class="auto">下次自动登录</label>
+            <span class="error right">海外手机登录</span>
           </div>
         </form>
         <div class="thirdpart">
@@ -137,60 +153,213 @@
       </div>
       <div class="barcode"></div>
     </div>
-    <div class="hot">
-      <div class="leftside left clearfix">
-        <div class="popular">
-          热点内容 ....(<a href="" class="more">更多</a>)
-        </div>
-        <div class="pics">
-          <div class="pic">
-            <p class="img i1"></p>
-            <p class="text">嘉德满都的微笑<span class="txt">42张照片</span></p>
+    <!--different containers-->>
+    <div class="containers">
+      <!--hot spot-->>
+      <div class="container clearfix">
+        <div class="leftside clearfix">
+          <div class="popular">
+            热点内容 ....(<a href="" class="more">更多</a>)
           </div>
-
-          <div class="pic">
-            <p class="img i2"></p>
-            <p class="text">姥爷的诗<span class="txt">19张照片</span></p>
-          </div>
-
-          <div class="pic">
-            <p class="img i3"></p>
-            <p class="text">也许每天更新<span class="txt">147张照片</span></p>
-          </div>
-
-          <div class="pic">
-            <p class="img i4"></p>
-            <p class="text">板绘<span class="txt">20张照片</span></p>
-          </div>
-        </div>
-      </div>
-      <div class="middle">
-        <ul>
-          <li>
-            <a href="">我流血了（上）</a>
-            <div class="title">柴卡丝的日记</div>
-            <div class="content">
-              我是一个出生没几年的女性——当然了，我没有做变性手术。为什么这么说呢？这篇足...
+          <div class="pics">
+            <div class="pic">
+              <p class="img i1"></p>
+              <p class="text">
+                嘉德满都的微笑<span class="txt">42张照片</span>
+              </p>
             </div>
-          </li>
-          <li><a href="">大格洛克纳山（大钟山）区奇妙之旅</a></li>
-          <li><a href="">合江：关于逝去的与留下的</a></li>
-          <li><a href="">别样的旅行（三）</a></li>
-          <li><a href="">我不想做那个只是会鼓掌的人</a></li>
-          <li>
-            <a href="">平潭岛的蓝眼泪并没有那么好看，只有海风让我流连忘返...</a>
-          </li>
-          <li>
-            <a href=""
-              >在“有情”传统中建立及重建自我——关于张新颖的沈从文传兼论其写法</a
-            >
-          </li>
-          <li><a href="">一年支教回顾总结（2019.8-2020.7）</a></li>
-          <li><a href="">记春蚕｜食桑-吐丝-作茧-化蛾</a></li>
-          <li><a href="">见不得人的爱好</a></li>
-        </ul>
+
+            <div class="pic">
+              <p class="img i2"></p>
+              <p class="text">姥爷的诗<span class="txt">19张照片</span></p>
+            </div>
+
+            <div class="pic">
+              <p class="img i3"></p>
+              <p class="text">也许每天更新<span class="txt">147张照片</span></p>
+            </div>
+
+            <div class="pic">
+              <p class="img i4"></p>
+              <p class="text">板绘<span class="txt">20张照片</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="rightside clearfix">
+          <div class="adv">
+            <img src="/workout1-Douban-mainpage/images/adv1.jpg" alt="" />
+          </div>
+          <div class="section-title">热门话题</div>
+          <span><a class="section-link">(去广场话题)</a></span>
+          <ul>
+            <li>
+              <a class="section-link">2020豆瓣夏季摄影大赛</a
+              ><span>70万次浏览</span>
+            </li>
+            <li>
+              <a class="section-link"
+                >掌握年轻状态的好习惯<span class="adv">广告</span></a
+              ><span>品牌话题.15.5万次浏览</span>
+            </li>
+            <li>
+              <a class="section-link">生活中的无限递归现象</a
+              ><span>48.3万次浏览</span>
+            </li>
+            <li>
+              <a class="section-link">“免责式”表达之我见</a
+              ><span> 6333次浏览</span>
+            </li>
+            <li>
+              <a class="section-link">为画作诗</a><span>2.3万次浏览</span>
+            </li>
+            <li>
+              <a class="section-link">因为一个镜头决定追的剧 </a
+              ><span>1.9万次浏览</span>
+            </li>
+          </ul>
+        </div>
+        <div class="middleside">
+          <ul>
+            <li>
+              <a class="section-link">我流血了（上）</a>
+              <div class="title">柴卡丝的日记</div>
+              <div class="content">
+                我是一个出生没几年的女性——当然了，我没有做变性手术。为什么这么说呢？这篇足...
+              </div>
+            </li>
+            <li><a href="">大格洛克纳山（大钟山）区奇妙之旅</a></li>
+            <li><a href="">合江：关于逝去的与留下的</a></li>
+            <li><a href="">别样的旅行（三）</a></li>
+            <li><a href="">我不想做那个只是会鼓掌的人</a></li>
+            <li>
+              <a href=""
+                >平潭岛的蓝眼泪并没有那么好看，只有海风让我流连忘返...</a
+              >
+            </li>
+            <li>
+              <a href=""
+                >在“有情”传统中建立及重建自我——关于张新颖的沈从文传兼论其写法</a
+              >
+            </li>
+            <li><a href="">一年支教回顾总结（2019.8-2020.7）</a></li>
+            <li><a href="">记春蚕｜食桑-吐丝-作茧-化蛾</a></li>
+            <li><a href="">见不得人的爱好</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="rightside right"></div>
+      <!--douban time-->
+      <div class="section">
+        <div class="container time clearfix">
+          <div class="leftside">
+            <div class="title">
+              <a class="section-link">豆瓣读书</a>
+            </div>
+          </div>
+          <div class="middleside">
+            <div class="title">
+              <span class="section-title">热门专栏</span>
+              <span class="section-link">(更多)</span>
+            </div>
+            <div class="pics">
+              <ul>
+                <li>
+                  <img
+                    src="/workout1-Douban-mainpage/images/time-1.jpg"
+                    alt=""
+                  />
+                  <div class="txt">一步到位的收纳法——20堂课打造不凌乱的家</div>
+                  <span>音频专栏</span>
+                </li>
+                <li>
+                  <img
+                    src="/workout1-Douban-mainpage/images/time-2.jpg"
+                    alt=""
+                  />
+                  <div class="txt">如何读透一本书——12堂阅读写作训练课</div>
+                  <span>音频专栏</span>
+                </li>
+                <li>
+                  <img
+                    src="/workout1-Douban-mainpage/images/time-3.jpg"
+                    alt=""
+                  />
+                  <div class="txt">复旦沈奕斐的社会学爱情思维课</div>
+                  <span>音频专栏</span>
+                </li>
+                <li>
+                  <img
+                    src="/workout1-Douban-mainpage/images/time-4.png"
+                    alt=""
+                  />
+                  <div class="txt">
+                    你好呀！日本——58个关键词凝视日本古今
+                  </div>
+                  <span>音频专栏</span>
+                </li>
+                <li>
+                  <img
+                    src="/workout1-Douban-mainpage/images/time-5.png"
+                    alt=""
+                  />
+                  <div class="txt">怦然心动的瞬间----14堂餐桌美学课</div>
+                  <span>音频专栏</span>
+                </li>
+                <li>
+                  <img
+                    src="/workout1-Douban-mainpage/images/time-6.png"
+                    alt=""
+                  />
+                  <div class="txt">
+                    一切美好的事物都与你有关——21天走出低自尊 音频专栏
+                  </div>
+                  <span>视频专栏</span>
+                </li>
+                <li>
+                  <img
+                    src="/workout1-Douban-mainpage/images/time-7.jpg"
+                    alt=""
+                  />
+                  <div class="txt">童话交响梦——古典音乐这样听 音频专栏</div>
+                  <span>视频专栏</span>
+                </li>
+                <li>
+                  <img
+                    src="/workout1-Douban-mainpage/images/time-8.jpg"
+                    alt=""
+                  />
+                  <div class="txt">简食知味——20道全生素食料理课</div>
+                  <span>视频专栏</span>
+                </li>
+                <li>
+                  <img
+                    src="/workout1-Douban-mainpage/images/time-9.jpg"
+                    alt=""
+                  />
+                  <div class="txt">人心可测——姜振宇的微表情读心术</div>
+                  <span>视频专栏</span>
+                </li>
+                <li>
+                  <img
+                    src="/workout1-Douban-mainpage/images/time-10.jpg"
+                    alt=""
+                  />
+                  <div class="txt">生死之间：10堂课学会如何与疾病共处</div>
+                  <span>视频专栏</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--douban movie-->
+      <div class="section"><div class="container">dsa</div></div>
+
+      <!--douban group-->
+      <div class="section"><div class="container"></div></div>
+      <!--douban music-->
+      <div class="section"><div class="container"></div></div>
     </div>
   </body>
+  <script src="index.js"></script>
 </html>
