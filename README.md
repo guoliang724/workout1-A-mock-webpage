@@ -1,3 +1,3 @@
-## original website www.douban.com
+## www.douban.com
 
-## the fake one: https://guoliang724.github.io/workout1-A-imitated-webpage/
+## mock: https://guoliang724.github.io/workout1-A-imitated-webpage/
